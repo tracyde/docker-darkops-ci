@@ -26,7 +26,7 @@ RUN apt-get update; apt-get -y upgrade; apt-get clean; \
       python-software-properties \
       language-pack-en \
       mysql-client \
-      wget \
+      wget awscli \
       ; \
       apt-get clean
 
