@@ -23,11 +23,16 @@ RUN apt-get update; apt-get -y upgrade; apt-get clean; \
       libyaml-dev \
       openssl \
       python \
+      python-pip \
+      python-dev \
+      python-setuptools \
       python-software-properties \
       language-pack-en \
       mysql-client \
-      wget awscli \
+      wget \
       ; \
       apt-get clean
+
+RUN pip install awscli
 
 ADD assets/config ~/.ssh/config
