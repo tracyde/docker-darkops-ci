@@ -14,6 +14,7 @@ RUN apt-get update; apt-get -y upgrade; apt-get clean; \
       unzip \
       pkg-config \
       tree \
+      jq \
       language-pack-en \
       libxslt-dev \
       libxml2-dev \
